@@ -1,0 +1,28 @@
+{
+  "name": "webpack-react-es6",
+  "version": "1.0.0",
+  "description": "webpack-react-es6",
+  "main": "./bin/js/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --devtool eval --progress --colors --content-base bin",
+    "build": "webpack --progress --colors"
+  },
+  "author": "huikaihoo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huikaihoo/webpack-react-es6.git"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-1": "^6.16.0",
+    "json-loader": "^0.5.4",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
+  }
+}
