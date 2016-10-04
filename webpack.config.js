@@ -5,7 +5,7 @@ module.exports = {
   entry: [path.resolve(__dirname, "jsx/main.jsx")],
   output: {
     // Output the bundled file.
-    path: path.resolve(__dirname, "bin/js"),
+    path: path.resolve(__dirname, "docs/js"),
     // Use the name specified in the entry key as name for the bundle file.
     filename: "main.js"
   },
