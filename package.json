@@ -2,10 +2,10 @@
   "name": "webpack-react-es6",
   "version": "1.0.0",
   "description": "webpack-react-es6",
-  "main": "./bin/js/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --devtool eval --progress --colors --content-base bin",
-    "build": "webpack --progress --colors"
+    "start": "webpack-dev-server --devtool eval --progress --hot",
+    "build": "NODE_ENV=production webpack --progress --colors"
   },
   "author": "huikaihoo",
   "license": "MIT",
@@ -19,9 +19,12 @@
     "babel-preset-es2015": "^6.16.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-1": "^6.16.0",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
     "json-loader": "^0.5.4",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.1"
   }

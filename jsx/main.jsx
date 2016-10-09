@@ -2,6 +2,8 @@
 
 "use strict";
 
+import "../css/main.css"
+
 import React from "react";
 import ReactDOM from "react-dom";
 import TestOne from "./TestOne.jsx";
@@ -24,9 +26,11 @@ class Main extends React.Component {
   }
   render() {
     return (
-      <div>
-        <input type="button" onClick={this._toggle} value="Press Me!"/>
-        {this.state.switch ? <TestOne /> : <TestTwo />}
+      <div className="ui container">
+        <div className="ui basic segment">
+          <input className="ui primary button" type="button" onClick={this._toggle} value="Press Me!"/>
+          {this.state.switch ? <TestOne /> : <TestTwo />}
+        </div>
       </div>
     );
   }
